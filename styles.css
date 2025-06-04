@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #35424a;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.contact, .skills, .projects {
+    margin: 20px 0;
+}
+
+.skill {
+    margin-bottom: 30px; /* Espacement accru entre les encadrés */
+    padding: 20px;
+    border: 2px solid #35424a; /* Bordure plus marquée */
+    border-radius: 8px;
+    background: #eaf2f8;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.skill:hover {
+    background: #d0e1f9;
+    transform: translateY(-2px);
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #35424a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.download-btn:hover {
+    background: #2c3e50;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #35424a;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #35424a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    margin: 20px 0;
+}
+
+.contact ul {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+    padding: 10px;
+    background: #eaf2f8; /* Fond léger pour chaque info */
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.contact li:hover {
+    background: #d0e1f9; /* Changement de couleur au survol */
+}
+
+.profile-pic {
+    width: 150px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour conserver le ratio */
+    margin-bottom: 15px; /* Espacement sous l'image */
+    display: block; /* Affiche l'image comme un bloc */
+    margin-left: auto; /* Centre l'image horizontalement */
+    margin-right: auto; /* Centre l'image horizontalement */
+    border: 2px solid #35424a; /* Bordure autour de l'image */
+    border-radius: 5px; /* Légères bordures arrondies */
+}

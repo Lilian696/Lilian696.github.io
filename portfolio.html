@@ -15,8 +15,8 @@
         <li><a href="#about">À propos</a></li>
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#education">Diplômes</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#references">Références</a></li>
+        <li><a href="#portfolio">Projet</a></li>
+        
         <li><a href="#contact">Me contacter</a></li>
         <li><a href="CV_Lilian_Le_Moual.pdf" download>CV</a></li>
       </ul>
@@ -25,7 +25,7 @@
 
   <!-- Hero Section -->
   <section id="hero">
-    <h1><!-- Nom Prénom --></h1>
+    <h1>Lilian Le Moual</h1>
     <p><!-- Tagline / titre --></p>
   </section>
 
@@ -49,7 +49,10 @@
 
         <div class="about-content">
           <div id="presentation" class="about-section">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Je m'appelle Lilian Le Moual, actuellement étudiant en première année de BUT Informatique.
+              Après avoir obtenu mon baccalauréat, je me suis orienté vers des études supérieures en BUT Informatique. Cette voie m’a permis de développer ma rigueur et mes compétences techniques dans de nombreux domaines informatiques.
+              <br>Je suis actuellement à la recherche d’un stage dans le domaine du développement web pour mettre mes compétences en pratique et continuer à progresser auprès de professionnels du secteur.
+            </p>
           </div>
           <div id="languages" class="about-section hidden">
             <ul>
@@ -66,16 +69,17 @@
           </div>
           <div id="soft-skills" class="about-section hidden">
             <ul>
-              <li><strong> Travail d'équipe </strong> – Lorem ipsum </li>
-              <li> <strong>Communication </strong>– Consectetur adipiscing </li>
+              <li><strong> Travail d'équipe </strong> –  J'ai eu l'occasion de maitriser le travail d'équipe après plusieurs projets </li>
               <li><strong>Curiosité : </strong>J'aime toujours en apprendre plus sur tous les sujets </li>
               <li><strong> Ponctualité </strong>et bonne <strong>gestion du temps </strong></li>
+              
             </ul>
           </div>
           <div id="passions" class="about-section hidden">
             <ul>
-              <li> Basket - Je pratique le basketball depuis mes 4 ans   </li>
-              <li> Musique - J'écoute de la musique tous les jours, de tous les styles différents</li>
+              <li><strong> Basket</strong> - Je pratique le basketball depuis mes 4 ans   </li>
+              <li><strong> Musique </strong>- J'écoute de la musique tous les jours, de tous les styles différents</li>
+              <li><strong>Géographie</strong>- Les cartes, les systèmes et les histoires des pays du monde m'intéressent </li>
             </ul>
           </div>
         </div>
@@ -135,73 +139,107 @@
 
   <!-- Diplômes -->
   <section id="education">
-    <h2>Diplômes</h2>
-    <div class="education-list">
-      <div class="education-item">
-        <h3><!-- Titre diplôme --></h3>
-        <p><!-- École / institution --></p>
-        <span class="dates"><!-- année – année --></span>
+  <h2>Diplômes</h2>
+
+  <div class="timeline">
+    <!-- Bac -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Baccalauréat</h3>
+        <p>Bac général au lycée François Rabelais de Saint Brieuc avec les spécialités Maths et NSI</p>
+        <span class="timeline-date">2024</span>
       </div>
     </div>
-  </section>
+
+    <!-- Études supérieures -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Études supérieures</h3>
+        <p>Actuellement en première année de BUT informatique à l'IUT de Lannion</p>
+        <span class="timeline-date">2024 – 2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Portfolio -->
   <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="project-filters">
-      <button data-filter="personal">Projets personnels</button>
-      <button data-filter="professional">Projets professionnels</button>
-    </div>
-    <div class="projects-grid">
-      <article class="project-card">
-        <div class="project-thumbnail"></div>
-        <h3><!-- Titre projet --></h3>
-        <div class="project-date"></div>
-        <p class="project-description"></p>
-        <ul class="project-technologies">
-          <li><!-- Tech1 --></li>
-        </ul>
-        <a href="#" class="project-link"><!-- lien maquette / site --></a>
-      </article>
-    </div>
-  </section>
+  <h2>Projet</h2>
 
-  <!-- Références -->
-  <section id="references">
-    <h2>Références</h2>
-    <div class="reference-list">
-      <div class="reference-card">
-        <h3><!-- Nom --></h3>
-        <p><!-- Titre / relation --></p>
-        <p><!-- Institution --></p>
-        <a href="mailto:reference@example.com"><!-- email --></a>
+  <!-- Filtres -->
+  
+
+  <!-- Grille de projets -->
+  <div class="projects-grid">
+    <!-- Projet personnel -->
+    <article class="project-card" data-type="personal">
+      <div class="project-thumbnail">
+        <img src="motus.jpg" alt="Projet personnel 1">
       </div>
-    </div>
-  </section>
+      <div class="project-info">
+        <h3>Mon projet perso</h3>
+        <p class="project-description">
+          Dans un cadre personnel j'ai créé un jeu du motus en python en utilisant des bibliothèques comme numpy.
+        </p>
+        <ul class="project-technologies">
+          <li>Python</li>
+          <li>Numpy</li>
+          
+        </ul>
+       
+      </div>
+    </article>
 
+    <!-- Projet professionnel -->
+    <article class="project-card" data-type="professional">
+      <div class="project-thumbnail">
+        <img src="snake1.png" alt="Projet pro 1">
+      </div>
+      <div class="project-info">
+        <h3>Projet professionnel</h3>
+        <p class="project-description">
+          Projet tutoré dans le cadre de mon BUT, J'ai du créér un jeu du snake en C executable dans un terminal Linux.
+        </p>
+        <ul class="project-technologies">
+          <li>C</li>
+          <li>Terminal</li>
+        </ul>
+        
+      </div>
+    </article>
+  </div>
+</section>
+
+
+  
+
+  <!-- Contact -->
   <!-- Contact -->
   <section id="contact">
     <h2>Me contacter</h2>
-    <form action="submit_form_handler" method="post">
+    <form action="https://formsubmit.co/lilianlm22@outlook.com" method="POST">
       <label for="email">Votre mail</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" name="email" required>
 
       <label for="subject">Objet</label>
-      <input type="text" id="subject" name="subject" required />
+      <input type="text" name="subject" required>
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <label for="captcha">5 - 1 =</label>
-      <input type="text" id="captcha" name="captcha" required />
+      <textarea name="message" required></textarea>
 
       <button type="submit">Envoyer</button>
     </form>
+
+
     <div class="form-messages">
-      <div class="success-message"><!-- success --></div>
-      <div class="error-message"><!-- erreur --></div>
+      <div class="success-message"><!-- Message de succès --></div>
+      <div class="error-message"><!-- Message d'erreur --></div>
     </div>
-    <p class="rgpd-notice"><!-- RGPD notice --></p>
+
+    
   </section>
 
   <!-- Footer -->
